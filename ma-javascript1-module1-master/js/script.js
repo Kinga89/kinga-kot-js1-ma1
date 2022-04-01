@@ -17,7 +17,7 @@ const cats = [
 const cat = complain();
 
 function complain() {
-    console.log("meow");
+    console.log("Meow!");
 }
 
 
@@ -37,7 +37,7 @@ heading.className = "subheading";
 const paragraphs = document.querySelectorAll("p");
 for (let i = 0; i < paragraphs.length; i++) {
     paragraphs[i].style.color = "red";
-}
+};
 
 
 //Question 6
@@ -52,7 +52,7 @@ function newList(list) {
     for (let i = 0; i < list.length; i++) {
         console.log(list[i].name);
     }
-}
+};
 
 newList(cats);
 
@@ -77,12 +77,10 @@ function createCats(cats) {
         <h5> ${cats[i].name} </h5>
         <p> ${catAge} </p>
         </div>`;
-
     }
 
-    const catResult = allCats;
-    return catResult;
-}
+    return allCats;
+};
 
 const newCatList = createCats(cats);
 console.log(newCatList);
